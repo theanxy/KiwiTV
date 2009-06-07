@@ -1,0 +1,23 @@
+/***********************************************************************************************
+		
+	Print stylesheet
+
+***********************************************************************************************/
+	
+	body {
+		font: normal normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+	
+	a[href]:after {
+		 content: " (" attr(href) ") ";
+		 font-size: 90%; 
+	}
+	
+	a[href^="/"]:after {
+		 content: " (http://domain.com" attr(href) ") "; }
+		 
+	#accessibility-nav { 
+		display:none !important; 
+	}
+		
+

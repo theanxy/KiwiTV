@@ -1,0 +1,1034 @@
+@import url(stacey.css); 
+@import url(mehigh.css); 
+/**********************************************************************************************
+
+	Title: Live Store
+	Date: September 2008 
+
+***********************************************************************************************
+
+		
+	1. BASE
+			1.1 Reset
+			1.2 Accessibility navigation
+			1.3 Default styles
+			1.3 Basic styles
+	
+	2. LAYOUT
+			2.1 Header
+			2.2 Content
+			2.3 Sidebar
+			2.4 Footer
+		
+
+***********************************************************************************************/
+
+
+/* 1. BASE
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/	
+
+
+
+/* 1.1	Reset
+-----------------------------------------------------------------------------------------------*/	
+
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+	}
+	
+	body {
+		line-height: 1;
+	}
+	
+	ol, ul {
+		list-style: none;
+	}
+	
+	blockquote, q {
+		quotes: none;
+	}
+	
+	blockquote:before, 
+	blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	
+	:focus {
+		outline: 0;
+	}
+	
+	ins {
+		text-decoration: none;
+	}
+	
+	del {
+		text-decoration: line-through;
+	}
+	
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+
+/* 1.2	Accessibility navigation
+-----------------------------------------------------------------------------------------------*/	
+
+	#accessibility-nav {
+		position: absolute;
+		left: -1000em;
+		text-align: left;
+	}
+
+
+/* 1.3	Default styles
+-----------------------------------------------------------------------------------------------*/	
+
+	body {
+		background: #d6e08d url(../images/bg_body.jpg) repeat-x;
+		font: 62.5% Tahoma, Arial, Helvetica, sans-serif;
+		text-align: center;
+		}
+
+	hr { 
+		display: none;
+	}
+			
+	strong {
+		font-weight: bold;
+	}
+			
+	em {
+		font-style: italic;
+	}
+		
+	abbr, acronym {
+		border-bottom: 1px dotted #999; 
+		cursor: help;
+	}
+	
+	input, textarea, select {
+		font: 1.2em Arial, Helvetica, sans-serif;
+	}
+
+	a {
+		color: #0000ff;
+		text-decoration: underline;
+	}
+	
+	a:hover, 
+	a:active {
+		color: #ff0000;
+		text-decoration: none;
+	}
+	
+
+/* 1.4	Basic styles
+-----------------------------------------------------------------------------------------------*/	
+
+	.hide {
+		display: none;
+	}
+	
+	/* clearing */
+	div#shipping div.order-summary ol li:after,
+	div#shipping div.choose-a-shipping-address li.shipping-method div:after,
+	div#shipping div.choose-a-shipping-address li.extra div:after,
+	div#shipping div.choose-a-shipping-address li div:after,
+	div#shipping div.choose-a-shipping-address li dl.my-address:after,
+	div#shipping div.title-area:after,
+	div#shopping-cart td.subtotal-shipping-tax dl:after,
+	div#login div.three-col-wrap:after,
+	div#login div.login-box fieldset div:after,
+	div#login div#login-or-register:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+	
+
+/* 2. LAYOUT
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/	
+
+	body {padding-bottom:100px;}
+	.body {
+		margin: 4px 0 0 0;
+		background: url(../images/bg_container_tile.jpg) repeat-y 50% 0;
+	}
+	
+	.body-2 {
+		padding: 50px 0 0 0;
+		background: url(../images/bg_container_top.jpg) no-repeat 50% 0;
+	}
+	
+	.body-3 {
+		padding: 0 0 66px 0;
+		background: url(../images/bg_container_bottom.jpg) no-repeat 50% 100%;
+	}
+	
+	.container {
+		width: 980px;
+		position: relative;
+		margin: 0 auto;
+		padding: 8px 0 11px 0;
+		background: #fff;
+		text-align: left;
+		font-size: 1.2em;
+	}
+	
+	#header {
+		width: 958px;
+		position: relative;
+		min-height: 136px;
+		margin: 0 10px 11px 10px;
+		padding: 13px 0 34px 0;
+		z-index: 10;
+		border: 1px solid #899916;
+		border-bottom: 3px solid #899916;
+	}
+	
+	* html #header {
+		height: 136px;
+	} /* move to ie6.css */
+	
+	#content {
+		width: 980px; 
+		min-height: 463px;
+		float: right;
+		position: relative;
+		z-index: 1;
+	}
+	
+	* html #content {
+		height: 463px;
+	} /* move to ie6.css */
+		
+	#sidebar {
+		width: 200px;
+		float: left; 
+	}
+	
+	#footer {
+		clear: both;
+		width: 938px;
+		position: relative;
+		margin: 0 11px;
+		padding: 14px 10px 22px 10px;
+		border: 1px solid #899916;
+		border-top: 3px solid #899916;
+	}
+	
+	/* One column layout */
+	
+	body.page-home #content {
+		width: 958px;
+		margin: 0 10px 0 11px;
+	}
+			
+	/* Three column layout */
+	
+	body.three-column #column-container {
+		width: 580px;
+		float: left;
+		padding: 0 200px 0 180px; 
+	}
+	
+	body.three-column #content {
+		width: 580px;
+		float: left;
+		margin-right: -580px;
+	}
+	
+	body.three-column #secondary-content {
+		float: right;
+		width: 220px;
+		margin-right: -220px;
+		position: relative;
+	}
+	
+	body.three-column #sidebar {
+		width: 180px;
+		float: left;
+		margin-left: -180px;
+		position: relative;
+	}
+	
+	
+/* 2.1	Header
+-----------------------------------------------------------------------------------------------*/	
+
+	#header h1, 
+	#header h1 span,
+	#header a.logo,
+	#header a.logo span {
+		display: block;
+		width: 256px;
+		height: 102px;
+		overflow: hidden;
+	}
+	
+	#header h1,
+	#header a.logo {
+		position: relative;
+		float: left;
+	}
+		
+	#header h1 span,
+	#header a.logo span {	
+		position: absolute; 
+		top: 0;
+		left: 0;
+		z-index: 10;
+		background: url(../images/logo.gif) no-repeat;
+	}
+	
+	#header a.logo span {	
+		cursor: pointer;
+	}
+
+	
+	/* primary navigation */
+	
+	#primary-nav {
+		width: 958px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 10;
+		font-size: 1.167em;
+	}
+	
+	#primary-nav,
+	#primary-nav ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		line-height: 1;
+		z-index: 5;
+	}
+	
+	#primary-nav a {
+		display: block;
+		padding: 0 25px 0 10px;
+		line-height: 34px;
+		height: 34px;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	#primary-nav li {
+		float: left;
+		background: url(../images/bg_primary_nav_off.gif) no-repeat 100% 50%;
+		background-color: #fff;
+		padding: 0 0 0 6px;
+	}
+	
+	#primary-nav li.nav-gift-ideas { width: 100px; }
+	#primary-nav li.nav-apparel { width: 90px; }
+	#primary-nav li.nav-footwear { width: 100px; }
+	#primary-nav li.nav-tables { width: 85px; }
+	#primary-nav li.nav-seating { width: 95px; }
+	#primary-nav li.nav-storage-and-display { width: 150px; }
+	#primary-nav li.nav-bed-and-bath { width: 115px; }
+	#primary-nav li.home-accessories { width: 150px; }
+
+	#primary-nav div {
+		width: 360px;
+		margin-left: -1px;
+		padding: 10px 0 0 0;
+		position: absolute;
+		left: -999em;
+		z-index: 200;
+		border: 1px solid #899916;
+		background: #fff;
+	}
+	
+	#primary-nav li:hover div, 
+	#primary-nav li.hover div {
+		left: auto;
+	}
+
+	#primary-nav li.nav-bed-and-bath:hover div {
+		margin-left: -247px;
+	}
+	
+	#primary-nav li.home-accessories:hover div {
+		margin-left: -212px;
+	}
+	
+	#primary-nav div.sub-nav {
+	  margin: 0 0 0 -6px;
+	}
+	
+	#primary-nav div ul {
+		float: left;
+		width: 180px;
+	}
+	
+	#primary-nav div ul ul {
+		float: none;
+		width: auto;
+		padding: 0 0 0 10px;
+	}
+	
+/*	#primary-nav a {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+*/
+
+		
+	#primary-nav li:hover {
+		background: #A6BA1B url(../images/bg_primary_nav_on.gif) no-repeat 0 0;
+	}
+	
+	#primary-nav li:hover a {
+	  background: url(../images/bg_primary_nav_on.gif) no-repeat 100% 0%;
+	}
+	
+	#primary-nav li:hover a,
+	#primary-nav li a:hover,
+	#primary-nav li a:active {
+		color: #fff;
+	}
+	
+
+	#primary-nav li a,
+	#primary-nav li:hover li a {
+		color: #686873;
+	}
+	
+	#primary-nav li:hover li a:hover,
+	#primary-nav li:hover li a:active {
+		color: #fff;
+	}
+	
+	
+	#header #primary-nav li li,
+	#header #primary-nav li li a {
+		float: none;
+		padding: 0;
+		line-height: normal;
+		background-color: transparent;
+		background-image: none;
+	}
+	
+	#header #primary-nav li li {
+		line-height: 17px;
+		background: none;
+		font-size: .857em;
+		padding: 0 8px;
+		float: none;
+		border-bottom: 1px dotted #d6d6d6;
+	}
+	
+	#header #primary-nav li li a {
+		height: auto;
+		text-align: left;
+		padding: 4px;
+	}
+	
+	#primary-nav li li, 
+	#primary-nav li li a {
+		width: auto;
+		float: none;
+		text-align: left;
+	}
+	
+	#header #primary-nav li li a:hover, 
+	#header #primary-nav li li a:active {
+    color: #fff;
+		text-decoration: none;
+		background: #b4c800;
+	}
+	
+	#primary-nav li li li a {
+		font-weight: normal;
+	}
+	
+	
+	/* toolbox */
+
+	#toolbox {
+		width: 545px;
+		overflow: hidden;
+		position: absolute;
+		left: 20px;
+		top: -38px;
+		z-index: 100;
+		font-size: 1.083em;
+	}
+	
+	#toolbox ul {
+    float: left;
+	}
+	
+	#toolbox #language {
+    background: url(../images/bg_toolbox_separator.png) no-repeat 0% 80%;
+	  padding: 0 0 0 11px;
+	}
+	
+	#toolbox li {
+		float: left;
+		padding: 0 18px 0 0;
+	}
+	
+	#toolbox li a {
+	  color: #b5d41a;
+	  text-decoration: none;
+	}
+	
+	#toolbox li a.active,
+	#toolbox li a:hover {
+    color: #e5f288; /* change to underline if possible */
+	}
+	
+  /* cart */
+
+  #cart {
+  	width: 360px;
+  	position: absolute;
+  	right: 28px;
+  	top: -39px;
+  	z-index: 100;
+  	font-size: .917em;
+  	overflow: visible;
+  }
+
+  #cart ul {
+    position: relative;
+    float: none;
+    height: 30px;
+  }
+
+  #cart .view-cart {
+    position: relative;
+    width: 144px;
+    left: 121px;
+    top: 0;
+    float: none;
+  }
+
+  #cart .checkout {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: none;
+  }
+
+  #cart a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* view-cart */
+
+  #cart .view-cart a.button {
+    background: url(../images/bg_cart_view.gif) no-repeat 0 0;
+    width: 144px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    cursor: hand;
+  }
+
+  #cart .view-cart a.button:hover {
+    background-position: 0% 100%;
+  }
+
+  #cart .view-cart a {
+    background: none;
+    float: none;
+  }
+
+
+  #cart .view-cart span {
+    float: left;
+    padding: 0 0 0 12px;
+  }
+
+  #cart .view-cart strong.price,
+ 	#cart .view-cart a.button strong {
+    float: right;
+    text-align: center;
+    width: 43px;
+  }
+
+  /* checkout */
+
+  #cart .checkout a {
+    background: url(../images/bg_cart_checkout.gif) no-repeat 0 0;
+    float: left;
+    margin: 9px 0 0;
+    width: 68px;
+    text-align: center;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 27px 0 0;
+  }
+
+  #cart .checkout a:hover {
+    background-position: 0% 100%;
+  }
+
+  .view-cart {
+    position: relative;
+  }
+
+  .view-cart .item-list {
+    display: none;
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    left: -9999px;
+    z-index: 5;
+    background: #899915;
+    border: 2px solid #c3d91f;
+    color: #fff;
+  }
+
+  #cart .view-cart:hover .item-list {
+    display: block;
+    left: 0;
+    width: 246px;
+    padding: 10px;
+    font-size: 1.091em;
+  }
+
+  #cart .view-cart .item-list ul {
+    float: left;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .view-cart .item-list li {
+    float: left;
+    width: 246px;
+    border-bottom: 1px dotted #a7b351;
+    margin: 0 0 -1px;
+    padding: 10px 0;
+  }
+
+  .view-cart .item-list h2 {
+    font-size: 1.333em;
+    font-weight: normal;
+  }
+
+  #cart .view-cart .item-list a.close {
+    float: right;
+    width: auto;
+    height: auto;
+    margin: 3px 0 0;
+    line-height: normal;
+  }
+
+  .view-cart .item-list li img.thumb {
+    float: left;
+    margin: 0 12px 0 0;
+  }
+
+  .view-cart .item-list li h3 {
+    font-weight: normal;
+  }
+
+	.view-cart .item-list li strong {
+		font-weight: normal;
+	}
+	
+  .view-cart .item-list div {
+    clear: both;
+    float: left;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #c3cc89;
+    padding: 10px 0;
+    margin: 0 0 20px;
+    width: 246px;
+  }
+
+  .view-cart .item-list h3.summary {
+    text-transform: uppercase;
+    float: left;
+    color: #e0ec80;
+    font-weight: normal;
+  }
+
+  #cart .view-cart .item-list a.full-cart {
+    color: #e0ec80;
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 5px 0 0;
+    line-height: normal;
+  }
+
+  #cart .view-cart .item-list a.full-cart:hover {
+    text-decoration: underline;
+  }
+
+  #cart .view-cart .item-list a.cart-checkout {
+    float: right;
+    margin: 0 -5px 2px 0;
+    line-height: normal;
+    width: 129px;
+    height: 33px;
+    overflow: hidden;
+    position: relative;
+    cursor: hand;
+  }
+
+  .view-cart .item-list a.cart-checkout span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../_media/images/but_checkout-2.gif);
+  }
+  	
+	/* my account */
+	
+	#my-account {
+		float: right;
+		width: 265px;
+		font-size: .917em;
+		color: #899916;
+		line-height: 1.6;
+	}
+	
+  #my-account a {
+    color: #899916;
+  }
+  
+	#my-account ul {
+	  margin: 0 0 0 0;
+	}
+	
+	#my-account li {
+	  float: left;
+	  background: url(../images/bg_myaccount_separator.gif) no-repeat 0% 60%;
+	  padding: 0 10px;
+	}
+	
+	#my-account li.first {
+    background: none;
+    padding-left:0;
+	}
+	
+	#my-account ul a {
+	  text-decoration: none;
+	}
+	
+	#my-account ul a:hover {
+	  text-decoration: underline;
+	  color: #d78e27;
+	}
+	
+	/* header forms */
+	
+	/* TODO: either implement autopopulated labels with DOJO or add html legends if possible */
+	
+	#header input.text {
+	  border: 1px solid #768a13;
+	  font-size: .833em;
+	  padding: 3px 4px 2px;
+	  margin: 1px 2px 1px 0;
+	  color: #3f490d;
+	  float: left;
+	}
+			
+  /* search */
+  
+  #search {
+    float: left;
+    width: 415px;
+  }
+  
+  #search input.text {
+    width: 150px;
+  }
+  
+  /* signup */
+  
+  #header .signup {
+    float: right;
+    clear: right;
+    margin: 10px 0 0;
+    width: 265px;
+  }
+  
+  #header .signup input.text {
+    width: 160px;
+  }
+  
+  /* shipping */
+  
+  #header .shipping {
+    float: left;
+    margin: 8px 0 0;
+    color: #7f7f8c;
+  }
+  
+  #header .shipping strong {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+	
+
+/* 2.2	Content
+-----------------------------------------------------------------------------------------------*/	
+
+  #promo-main {
+    width: 626px;
+    min-height: 489px;
+    float: left;
+    color: #fff;
+    position: relative;
+    background: #8da3c9;
+  }
+  
+  #promo-main .wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  
+  #promo-main h2 {
+    font-size: 2.083em;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: 40px 0 0 50px;
+    width: 210px;
+  }
+  
+  #promo-main p,
+  #promo-main .price {
+    display: block;
+    margin: 20px 0 0 50px;
+    width: 210px;
+    font-size: 1.333em;
+    font-weight: normal;
+  }
+  
+  #promo-main .promo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .promos {
+    float: right;
+    width: 321px;
+	padding-top: 1px;
+	overflow: hidden;
+  }
+  
+  .promos li {
+  	width: 319px;
+	float: left;
+    border: 1px solid #768a13;
+    margin: 0 0 13px;
+  }
+  
+  .promos li a {
+    text-decoration: none;
+    display: block;
+	width: 152px;
+    min-height: 140px;
+    position: relative;
+    padding: 12px 155px 0 12px;
+  }
+  
+  .promos li strong {
+    color: #768a13;
+    font-weight: normal;
+    font-size: 1.417em;
+  }
+  
+  .promos li span {
+    display: block;
+    color: #6c6b79;
+    margin: 12px 0 0;
+  }
+  
+  .promos li .thumbnail {
+    position: absolute;
+    top: 1px;
+    right: 0;
+  }
+  
+  /* three horizontal promos */
+  
+  .promos-abc {
+    overflow: hidden;
+    clear: both;
+		margin: 0 0 11px;
+  }
+  
+  .promos-abc div {
+    width: 308px;
+    float: left;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  .promos-abc div.promo-c {
+    margin: 0;
+    width: 321px;
+  }
+  
+  .promos-abc div img {
+    float: right;
+    margin: 2px;
+  }
+  
+  .promos-abc div h3 {
+    font-size: 1.417em;
+    font-weight: normal;
+    padding: 13px;
+  }
+  
+  .promos-abc div p {
+    padding: 0 13px 13px;
+  }
+  
+  .promos-abc div strong {
+    float: left;
+    padding: 0 0 0 13px;
+    font-weight: normal;
+  }
+  
+  .promos-abc div a.add-to-cart {
+    float: right;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 3px 0 0;
+  }
+  
+  .promos-abc div a.add-to-cart:hover {
+    text-decoration: underline;
+  }
+
+/* 2.3	Sidebar
+-----------------------------------------------------------------------------------------------*/	
+
+
+/* 2.4	Footer
+-----------------------------------------------------------------------------------------------*/	
+
+	#footer .column-wrap {
+		width: 938px;
+		overflow: hidden;
+		padding: 0 0 2px;
+    background: url(../images/bg_footer_columns.gif) repeat-y 0 0;
+	}
+	
+	#footer .column-wrap div {
+		float: left;
+		padding: 0 30px 0 10px;
+	}
+	
+	#footer .column-wrap div h2 {
+	  font-weight: normal;
+	  color: #768A13;
+	  padding: 0 0 4px;
+	  font-size: 1.167em;
+	}
+	
+	#footer .column-wrap div li {
+	  padding: 0 0 3px;
+	}
+	
+	#footer .column-wrap div a {
+	  font-size: .917em;
+	  color: #6C6B79;
+	  text-decoration: none;
+	}
+	
+	#footer .column-wrap div a:hover {
+	  text-decoration: underline;
+	}
+	
+	#footer .column-wrap div.shop {
+		width: 84px;
+	}
+	
+	#footer .column-wrap div.help {
+		width: 145px;
+	}
+	
+	#footer .column-wrap div.info {
+		width: 324px;
+		overflow: hidden;
+	}
+	
+	#footer .column-wrap div.info ul {
+		width: 155px;
+		/* in design measured a width of 131px; */
+		float: left;
+		padding: 0 7px 0 0;
+	}
+	
+	#footer .column-wrap div.stay-in-touch {
+		width: 254px;
+		float: right;
+		padding: 0;
+	}
+	
+		#footer .signup input.text {
+	  border: 1px solid #768a13;
+	  font-size: .833em;
+	  padding: 2px 4px;
+	  margin: 1px 2px 1px 0;
+	  color: #3f490d;
+	  width: 160px;
+	  float: left;
+	}
+	
+  #footer .signup input.button {
+	  background: #899916 url(../images/btn_signup.gif);
+	  border: 0;
+	  padding: 2px 10px;
+	  font-size: .917em;
+	  color: #fff;
+	  float: left;
+	  min-height: 21px;
+	  font-weight: bold;
+	}
+	
+	#footer .column-wrap div.stay-in-touch p {
+	  width: 160px;
+    margin: 5px 0 0;
+    line-height: 1.5;
+	}
+
+	#footer #copyright {
+		width: 958px;
+		position: absolute;
+		bottom: -60px;
+		left: 0;
+		z-index: 999;
+		color: #768a13;
+		font-size: .917em;
+	}
+	
+	#footer #copyright img {
+	  float: right;
+	}

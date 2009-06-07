@@ -1,0 +1,20 @@
+/* Lightbox
+-----------------------------------------------------------------------------------------------*/	
+
+#lightbox{
+	/*display:none;*/
+	position: absolute;top:245px;left:50%;z-index:9999;
+	text-align:left;
+}
+
+#overlay{
+	/*display:none;*/
+	position:absolute;top:0;left:0;z-index:5000;
+	width:100%;height:100%;
+	background-color:#333;-moz-opacity: 0.8;opacity:.80;filter:alpha(opacity=80);
+}
+* html #overlay {height:1600px;}
+#overlay[id]{ position:fixed;}
+
+#lbContent {position:relative;background:#fff;padding:7px;}
+#lbContent  a.close {position:absolute;top:10px;right:10px;z-index:2;display:block;width:18px;height:18px;text-indent:-9999px;cursor:pointer;background:url(../images/ico_close.gif) no-repeat;}

@@ -1,0 +1,57 @@
+/* IE Fixes - > shipping, billing & login pages */
+div#shipping div.choose-a-shipping-address li dl dt input { margin-top: 27px; }  
+div#shipping div.choose-a-shipping-address li dl dt.inactive input { margin-top: 22px; } 
+div#shipping div.choose-a-shipping-address li.extra label { margin-top: 1px; }
+div#shipping div.choose-a-shipping-address li.extra div { margin-bottom: 3px; }
+div#shipping div.choose-a-shipping-address li.extra { padding-bottom: 50px; } 
+div#shipping div.choose-a-shipping-address li dl div select { float: left; width: 161px; } 
+div#shipping div.choose-a-shipping-address li dl dd div.bg-short { min-height: 375px; height: auto !important; height: 375px; }  
+div#shipping div.choose-a-shipping-address li fieldset.nobg dl dt label { width: auto; margin: 1px 0 0 6px; }
+div#shipping div.choose-a-shipping-address li fieldset.nobg dl dt input { margin: 0 0 0 0; padding: 0; }
+div#login div.login-box h2 span { padding: 6px 40px 6px 17px; }   
+div#login div#login-or-register div.new-customer fieldset.enter-info label { margin-top: 4px; }
+div#login div#login-or-register div.new-customer div.fave_product_features { padding-bottom: 15px; } 
+div#login div#login-or-register p.note { padding: 3px 0 0 0; }
+div#shipping div.choose-a-shipping-address li dl dt.inactive-top input { margin-top: 29px; }
+div#shipping div.choose-a-shipping-address li dl dt.active-btm input { margin-top: 22px; }
+div#login div.login-box fieldset div label, div#login div.login-box fieldset div.already-registered label { margin-top: 3px; }
+div#login div.login-box { padding-top: 0; }  
+div#login div.login-box fieldset div input, div#login div.login-box fieldset,
+div#login div#login-or-register div.login-box fieldset { margin: 0; } 
+div#shipping div.choose-a-shipping-address li.shipping-method input, div#shipping div.choose-a-shipping-address li.extra input, div#login div#login-or-register div.new-customer fieldset.enter-info input.checkbox { margin-top: 0; }  
+ 
+/* clearing */
+div#shipping div.order-summary ol li,
+div#shipping div.choose-a-shipping-address li.shipping-method div,
+div#shipping div.choose-a-shipping-address li.extra div,
+div#shipping div.choose-a-shipping-address li div,
+div#shipping div.choose-a-shipping-address li dl.my-address,
+div#shipping div.title-area,
+div#shopping-cart td.subtotal-shipping-tax dl,
+div#login div.three-col-wrap,
+div#login div.login-box fieldset div,
+div#login div.login-box h2,
+div#login div#login-or-register,
+#products-filters .available-filters li,
+#products-filters .current-filters,
+#products-filters .available-filters li li a {zoom:1;}
+
+/* page nav fix */
+.page-nav {
+	zoom: 1;
+	line-height: 1em;
+	}
+
+	.page-nav * {
+		float: left;
+		}
+
+	.page-nav li a {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		}
+
+	.page-nav li a.next, .page-nav li a.prev {
+		margin-top: 3px;
+		}
+

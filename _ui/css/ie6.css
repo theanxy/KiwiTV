@@ -1,0 +1,118 @@
+/***********************************************************************************************
+		
+	Internet Explorer 6 stylesheet
+
+***********************************************************************************************/
+	
+	/* Enables :hover on list / other elements */
+	body {
+		behavior: url("_ui/js/csshover.htc");
+	}
+	
+	/* Adds support for PNG files */
+	img, div {
+		behavior: url("_ui/js/iepngfix.htc"); 
+	}
+
+
+  /* min-height */
+
+  #promo-main {
+    height: 489px;
+  }
+
+  .promos li a {
+    height: 140px;
+  }
+
+  #header input.button {
+    height: 21px;
+  }
+
+  #my-account li.first {
+    padding-left: 0;
+  }
+
+  #cart .view-cart .item-list {
+    position: static;
+  }
+
+  div.hot-suggestion .promos li,
+  #content .headline
+	{
+	zoom: 1;
+	}
+  
+  
+  /* doubled-margin bug */
+
+  #my-account ul,
+  #header input.text,
+  .promos-abc div,
+  .promos-abc div img,
+  .view-cart .item-list li img.thumb,
+  #products .price,.headline img,
+  #products li,
+  body.page-home #content  {
+    display: inline;
+  }
+	
+	
+/* IE6 Fixes - > shipping, billing & login pages */
+div#shipping div.order-summary { float: none; padding-left: 18px; }
+div#shipping div.choose-a-shipping-address li dl dt { margin-left: 1px; }  
+div#shipping div.choose-a-shipping-address li dl dd fieldset div { margin: 0 11px 0 21px; } 
+div#shipping div.choose-a-shipping-address li dd.new-cc { margin-top: -182px; }  
+div#shipping div.choose-a-shipping-address li dl dd fieldset.second-active img.cc { right: 13px; }  
+div#login div#login-or-register div.login-box select { margin-left: -3px; width: 245px; } 
+div#login div#login-or-register div.new-customer fieldset.enter-info input.checkbox { margin-left: -5px; } 
+div#login div#login-or-register div.new-customer fieldset div.fave_product_features span { padding: 0; height: 1px; }o
+
+
+/* products filters */
+#products-filters .current-filters,
+#products-filters .current-filters a ,
+#products-filters .available-filters li,
+#products-filters .available-filters li a 
+	{
+	zoom:1;
+	}
+
+#products-filters h3 , #products-filters li, #products-filters a {
+	position: relative;
+	}
+
+#products-filters {
+	behavior: none;
+	overflow: hidden;
+	}
+
+	#products-filters h3 {
+		margin-top: -15px;
+		}
+
+#products-filters .current-filters, 
+#products-filters .available-filters li
+	{
+	behavior: none;
+	}
+
+/* page nav fix */
+.page-nav {
+	zoom: 1;
+	line-height: 1em;
+	}
+
+	.page-nav * {
+		float: left;
+		}
+
+	.page-nav li a {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		}
+
+	.page-nav li a.next, .page-nav li a.prev {
+		margin-top: 3px;
+		}
+		

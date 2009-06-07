@@ -1,0 +1,168 @@
+/**********************************************************************************************
+
+	Title: Live Store
+	Date: September 2008 
+
+***********************************************************************************************
+
+		
+	1. BASE
+			1.1 Reset
+			1.2 Accessibility navigation
+			1.3 Default styles
+			1.3 Basic styles
+	
+	2. LAYOUT
+			2.1 Header
+			2.2 Content
+			2.3 Sidebar
+			2.4 Footer
+		
+
+***********************************************************************************************/
+
+
+/* 1. BASE
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/	
+
+
+
+/* 1.1	Reset
+-----------------------------------------------------------------------------------------------*/	
+
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		background: transparent;
+	}
+	
+	body {
+		line-height: 1;
+	}
+	
+	ol, ul {
+		list-style: none;
+	}
+	
+	blockquote, q {
+		quotes: none;
+	}
+	
+	blockquote:before, 
+	blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	
+	:focus {
+		outline: 0;
+	}
+	
+	ins {
+		text-decoration: none;
+	}
+	
+	del {
+		text-decoration: line-through;
+	}
+	
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+
+/* 1.2	Accessibility navigation
+-----------------------------------------------------------------------------------------------*/	
+
+	#accessibility-nav {
+		position: absolute;
+		left: -1000em;
+		text-align: left;
+	}
+
+
+/* 1.3	Default styles
+-----------------------------------------------------------------------------------------------*/	
+
+	body {
+		background: #d6e08d url(../images/bg_body.jpg) repeat-x;
+		font: 62.5% Tahoma, Arial, Helvetica, sans-serif;
+		text-align: center;
+		}
+
+	hr { 
+		display: none;
+	}
+			
+	strong {
+		font-weight: bold;
+	}
+			
+	em {
+		font-style: italic;
+	}
+		
+	abbr, acronym {
+		border-bottom: 1px dotted #999; 
+		cursor: help;
+	}
+	
+	input, textarea, select {
+		font: 1.2em Arial, Helvetica, sans-serif;
+	}
+
+	a {
+		color: #0000ff;
+		text-decoration: underline;
+	}
+	
+	a:hover, 
+	a:active {
+		color: #ff0000;
+		text-decoration: none;
+	}
+	
+
+/* 1.4	Basic styles
+-----------------------------------------------------------------------------------------------*/	
+
+	.hide {
+		display: none;
+	}
+
+
+/* 2. LAYOUT
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/	
+
+	
+/* 2.1	Header
+-----------------------------------------------------------------------------------------------*/	
+	
+
+/* 2.2	Content
+-----------------------------------------------------------------------------------------------*/	
+
+
+/* 2.3	Sidebar
+-----------------------------------------------------------------------------------------------*/	
+
+
+/* 2.4	Footer
+-----------------------------------------------------------------------------------------------*/	

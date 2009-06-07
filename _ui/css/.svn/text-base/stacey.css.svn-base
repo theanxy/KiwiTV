@@ -1,0 +1,225 @@
+/* page-shipping */
+div#shipping { padding: 0 13px; position: relative; }
+div#shipping h1 { color: #a6ba1b; font-size: 2.5em; line-height: 1.1em; font-weight: normal; padding: 14px 0 36px 18px; } 
+div#shipping h2 { color: #f48027; font-size: 1.5em; line-height: 1.1em; font-weight: normal; padding: 0 0 0 18px; letter-spacing: 0.015em; } 
+div#shipping label { cursor: pointer; }
+div#shipping input.text, div#login input.text { border: 1px solid #6c7911; }
+
+/* shipping-nav */
+ol.shipping-nav { width: 407px; position: absolute; top: 17px; right: 18px; height: 24px; }
+ol.shipping-nav li { margin-left: 21px; float: left; position: absolute; top: 0; left: 0; text-transform: uppercase; color: #85898c; font-size: 1.2em; line-height: 1.6em; text-indent: 15px; }
+ol.shipping-nav li span { position: absolute; top: 0; left: 0; z-index: 10; background: url(../images/bg_login_shipping_billing_confirm.gif) no-repeat; } 
+ol.shipping-nav li, ol.shipping-nav li span { display: block; height: 24px; overflow: hidden; }
+ol.shipping-nav li.login { margin-left: 0; }
+ol.shipping-nav li.login, ol.shipping-nav li.login span { width: 72px; }
+ol.shipping-nav li.shipping, ol.shipping-nav li.shipping span { width: 96px; }
+ol.shipping-nav li.billing, ol.shipping-nav li.billing span { width: 82px; }
+ol.shipping-nav li.confirm, ol.shipping-nav li.confirm span { width: 93px; }
+ol.shipping-nav li.login { left: 0; }
+ol.shipping-nav li.shipping { left: 72px; }
+ol.shipping-nav li.billing { left: 189px; }
+ol.shipping-nav li.confirm { left: 292px; }   
+ol.shipping-nav li.login span { background-position: 0 0; } 
+ol.shipping-nav li.shipping span { background-position: -72px 0; } 
+ol.shipping-nav li.billing span { background-position: -168px 0; } 
+ol.shipping-nav li.confirm span { background-position: -250px 0; }  
+ol.shipping-nav li.login span.current { background-position: 0 -24px; } 
+ol.shipping-nav li.shipping span.current { background-position: -72px -24px; } 
+ol.shipping-nav li.billing span.current { background-position: -168px -24px; } 
+ol.shipping-nav li.confirm span.current { background-position: -250px -24px; } 
+
+/* order-summary */
+div#shipping div.order-summary { float: right; width: 302px; }
+div#shipping div.order-summary a { color: #e5f288; text-decoration: none; }
+div#shipping div.order-summary h2 { padding: 0 0 10px 4px; } 
+div#shipping div.order-summary ol { background: url(../images/bg_order_summary_body.gif) repeat-y top left; margin: 1px 0 20px; }
+* html div#shipping div.order-summary {margin-bottom:20px;}
+* html div#shipping div.order-summary ol {margin-bottom:-5px;}
+*+html div#shipping div.order-summary {margin-bottom:20px;}
+*+html div#shipping div.order-summary ol {margin-bottom:-5px;}
+div#shipping div.order-summary ol li { background: url(../images/bg_order_summary_dashes.gif) repeat-x top left; color: #fff; font-weight: bold; padding: 11px 70px 8px 23px; line-height: 1.3em; clear: left; position: relative; }
+div#shipping div.order-summary ol li.first { background: url(../images/bg_order_summary_top.gif) no-repeat top left; padding-top: 22px; }
+div#shipping div.order-summary ol li div.quantity { float: left; padding-right: 14px; display: block; }
+div#shipping div.order-summary ol li dl { float: left; }
+div#shipping div.order-summary ol li span.item { float: left; display: block; }
+div#shipping div.order-summary ol li dd { clear: left; }
+div#shipping div.order-summary ol li span.price { position: absolute; right: 18px; top: 11px; }
+div#shipping div.order-summary ol li.first span.price { top: 22px; }
+div#shipping div.order-summary ol li.last { padding-bottom: 31px; }
+div#shipping div.order-summary ol li.subtotal { padding: 17px 23px 10px; background: none; border-top: 1px solid #fff; }
+div#shipping div.order-summary ol li.subtotal dl { position: relative; width: 100%; }
+div#shipping div.order-summary ol li.subtotal dt { color: #e5f288; }
+div#shipping div.order-summary ol li.subtotal dd { position: absolute; right: 0; top: 0; }
+div#shipping div.order-summary ol li.total { background: url(../images/bg_order_summary_btm.gif) no-repeat top left; height: 24px; color: #e5f288; padding: 20px 23px 12px; line-height: 1; font-size: 1.4em; font-weight: bold; } 
+div#shipping div.order-summary ol li.total dl { position: relative; width: 100%; } 
+div#shipping div.order-summary ol li.total dd { position: absolute; right: 0; top: 0; }
+
+/* choose-a-shipping-address */
+div#shipping div.choose-a-shipping-address { float: left; width: 630px; color: #fff; position: relative; }
+div#shipping div.choose-a-shipping-address h2 { padding-bottom: 11px; }  
+div#shipping div.choose-a-shipping-address h2 span { font-weight: normal; color: #a8b91b; }
+div#shipping div.choose-a-shipping-address h2.step-one { width: 300px; float: left; }
+div#shipping div.choose-a-shipping-address h2.step-two { float: left; }
+div#shipping div.choose-a-shipping-address li dl dt { float: left; width: 312px; margin-left: 2px; font-weight: bold; overflow: hidden; }
+div#shipping div.choose-a-shipping-address li dl dt label { margin: 6px 0 0 0; padding: 24px 0 31px; display: block; float: left; width: 265px; color: #fff; } 
+div#shipping div.choose-a-shipping-address li fieldset.nobg dl dt { float: none; width: auto; margin: 0 21px; }
+div#shipping div.choose-a-shipping-address li fieldset.nobg dl dt input { float: left; width: auto; margin: 3px 0 0 0; padding: 0; }
+div#shipping div.choose-a-shipping-address li fieldset.nobg dl dt label { padding: 0; margin: 0 0 0 10px; width: 245px; color: #e4f187; line-height: 1.5em; } 
+div#shipping div.choose-a-shipping-address li dl dt input { float: left; margin: 30px 6px 0 14px; }  
+div#shipping div.choose-a-shipping-address li dl dt.inactive input { margin-top: 26px; }
+div#shipping div.choose-a-shipping-address li dl dt.inactive label { margin: 0; padding: 25px 0 32px; } 
+div#shipping div.choose-a-shipping-address li dl dt.inactive-top label { margin: 6px 0 0 0; padding: 26px 0 31px; display: block; float: left; width: 265px; color: #fff; }
+div#shipping div.choose-a-shipping-address li dl dt.inactive-top input { float: left; margin: 32px 6px 0 14px; }  
+div#shipping div.choose-a-shipping-address li dl dt.active-btm input { margin-top: 25px; }
+div#shipping div.choose-a-shipping-address li dl dt.active-btm label { margin: 0; padding: 24px 0 32px; } 
+div#shipping div.choose-a-shipping-address li dl dt span.arrow { color: #e5f288; font-weight: bold; font-size: 0.9em; }
+div#shipping div.choose-a-shipping-address li dl { clear: left; }
+div#shipping div.choose-a-shipping-address li dl dt.active { background: url(../images/bg_forms_left_top_active.gif) no-repeat top left; height: 76px; margin-top: 31px; }
+div#shipping div.choose-a-shipping-address li dl dt.inactive { background: url(../images/bg_forms_left_btm_inactive.gif) no-repeat top left; height: 77px; } 
+div#shipping div.choose-a-shipping-address li dl dt.active-btm { background: url(../images/bg_forms_left_btm_active.gif) no-repeat top left; height: 78px; margin-top: 0; }
+div#shipping div.choose-a-shipping-address li dl dt.inactive-top { background: url(../images/bg_forms_left_top_inactive.gif) no-repeat top left; height: 79px; margin-top: 29px; } 
+div#shipping div.choose-a-shipping-address li.gift-certificate { margin: 15px 0 0 2px; width: 295px; padding: 18px 0 0 0; position: absolute; top: 200px; left: 13px; }
+div#shipping div.choose-a-shipping-address li.gift-certificate label { color: #a8b91d; font-weight: bold; float: none; }
+div#shipping div.choose-a-shipping-address li.gift-certificate input { border: 1px solid #a6ac86; width: 270px; margin: 9px 0 0; }
+div#shipping div.choose-a-shipping-address li.shipping-method { background: url(../images/bg_shipping_method_top.gif) no-repeat top left; margin: 15px 0 0 2px; width: 295px; padding: 18px 0 0 0; position: absolute; top: 215px; left: 0; }
+div#shipping div.choose-a-shipping-address li.shipping-method fieldset { background: url(../images/bg_shipping_method_btm.gif) no-repeat bottom left; padding-bottom: 10px; }
+div#shipping div.choose-a-shipping-address li.shipping-method label span.uppercase { color: #f3dfc6; font-weight: bold; text-transform: uppercase; }
+div#shipping div.choose-a-shipping-address li.shipping-method small { font-size: 0.9em; }
+div#shipping div.choose-a-shipping-address li.shipping-method div { padding: 0 0 14px 13px; }
+div#shipping div.choose-a-shipping-address li.shipping-method input { float: left; margin: 2px 0 0 0; }
+div#shipping div.choose-a-shipping-address li.shipping-method label { padding: 0 0 0 7px; line-height: 1.4em; float: left; display: block; width: 255px; } 
+div#shipping div.choose-a-shipping-address li.shipping-method p { text-align: right; padding: 1px 18px 12px; color: #f3dfc6; }
+div#shipping div.choose-a-shipping-address li.shipping-method a { color: #f3dfc6; }
+div#shipping div.choose-a-shipping-address li dl dd { float: right; width: 316px; } 
+div#shipping div.choose-a-shipping-address li dl dd div.bg { background: url(../images/bg_forms_middle_btm.gif) no-repeat bottom left; min-height: 398px; height: auto !important; height: 398px; } 
+div#shipping div.choose-a-shipping-address li dl dd div.bg-short { min-height: 362px; height: auto !important; height: 362px; } 
+div#shipping div.choose-a-shipping-address li dl dd fieldset { background: url(../images/bg_forms_middle_top.gif) no-repeat top left; padding-bottom: 17px; display: block; } 
+div#shipping div.choose-a-shipping-address li dl dd fieldset.second-active { background: url(../images/bg_forms_middle_top2.gif) no-repeat top left; } 
+div#shipping div.choose-a-shipping-address li dl dd fieldset.nobg { background: none; }
+div#shipping div.choose-a-shipping-address li dl dd fieldset.select-address { background: url(../images/bg_forms_middle_dashes.gif) repeat-x bottom left; margin: 0 21px; margin-bottom: 15px; }
+div#shipping div.choose-a-shipping-address li dl dd fieldset.select-address div { margin: 0; padding: 15px 0; }
+div#shipping div.choose-a-shipping-address li dl dd fieldset.select-address p { text-align: right; color: #e5f288; }
+div#shipping div.choose-a-shipping-address li dl dd fieldset.second-active img.cc { position: absolute; right: 4px; top: -5px; } 
+div#shipping div.choose-a-shipping-address li dl dd fieldset.second-active div.req-credit-cards { position: relative; }
+div#shipping div.choose-a-shipping-address li dl dd fieldset div { margin: 0 21px; }
+div#shipping div.choose-a-shipping-address li dl dd fieldset div div { margin: 0; }
+div#shipping div.choose-a-shipping-address li.extra { clear: left; border-top: 2px solid #c4cc8a; padding: 15px 16px 60px; position: relative; margin: 6px 0 0 0; width: 598px; } 
+div#shipping div.choose-a-shipping-address li.extra div { margin: 0 0 6px; }
+div#shipping div.choose-a-shipping-address li.extra label { color: #abbe29; text-decoration: underline; float: left; padding: 2px 0 0 6px; }
+div#shipping div.choose-a-shipping-address li.extra input { margin: 3px 0 0 0; float: left; }
+div#shipping div.choose-a-shipping-address li.extra fieldset.button input { position: absolute; right: 17px; top: 15px; }
+div#shipping div.choose-a-shipping-address li div.select-address { padding: 57px 0; border-bottom: 1px solid #c4cc8a; overflow: hidden; } 
+div#shipping div.choose-a-shipping-address li fieldset input, 
+div#shipping div.choose-a-shipping-address li fieldset select { font-size: 1em; }
+div#shipping div.choose-a-shipping-address li fieldset.padd { padding-bottom: 55px; } 
+div#shipping div.choose-a-shipping-address li dl div label { width: 111px; display: block; float: left; margin: 3px 0 0 0; }
+div#shipping div.choose-a-shipping-address li dl div select { float: left; width: 159px; }
+div#shipping div.choose-a-shipping-address li dl div input { float: left; width: 157px; }
+div#shipping div.choose-a-shipping-address li dl dd a { color: #e5f288; }  
+div#shipping div.choose-a-shipping-address li dl.my-address { margin: 0 25px 0 21px; padding: 24px 0 13px; border-bottom: 1px solid #c4cc8a; }
+div#shipping div.choose-a-shipping-address li dl.my-address dt { width: 111px; display: block; float: left; color: #e5f288; font-weight: bold; margin: 1px 0 0 0; padding: 0; }
+div#shipping div.choose-a-shipping-address li dl.my-address dd { float: left; display: block; width: auto; line-height: 1.35em; } 
+div#shipping div.choose-a-shipping-address li dl.my-address dd div { padding: 0; margin: 0; width: 155px; }
+div#shipping div.choose-a-shipping-address li dl.my-address dd p { text-align: right; font-size: 0.9em; padding: 13px 0 2px; color: #e5f288; }  
+div#shipping div.choose-a-shipping-address li fieldset span.req { color: #e5f288; }
+div#shipping div.choose-a-shipping-address li fieldset span.format { font-size: 0.9em; color: #e5f288; margin-left: 112px; padding: 2px 0 0 0; }
+div#shipping div.choose-a-shipping-address li fieldset.enter-info { padding: 26px 0 0 0; position: relative; }
+div#shipping div.choose-a-shipping-address li fieldset.enter-info2 { padding-top: 15px; }
+div#shipping div.choose-a-shipping-address li fieldset.enter-info p { padding: 0 0 19px; }
+div#shipping div.choose-a-shipping-address li fieldset.enter-info div { margin-bottom: 9px; } 
+div#shipping div.choose-a-shipping-address li fieldset.with-input-security div.select-address { padding: 57px 0 9px; border: 0; overflow: hidden; }
+div#shipping div.choose-a-shipping-address li div.input-security { margin: 0 21px 0; border-bottom: 1px solid #c4cc8a; padding: 0 0 30px; }
+div#shipping div.choose-a-shipping-address li div.input-security-padd { margin-bottom: 40px; }
+div#shipping div.choose-a-shipping-address li div.input-security input { width: 82px; }
+div#shipping div.choose-a-shipping-address li div.input-security span.note { font-size: 0.9em; padding: 3px 0 0 7px; display: block; float: left; }  
+div#shipping div.choose-a-shipping-address li div.req-credit-cards p { padding: 0 0 6px; margin: 0; } 
+div#shipping div.choose-a-shipping-address li dd.new-cc { margin-top: -108px; margin-bottom: 16px; }  
+div#shipping div.choose-a-shipping-address li div.select-month select,
+div#shipping div.choose-a-shipping-address li select.expiration-year { float: left; width: 59px; }
+div#shipping div.choose-a-shipping-address li select.expiration-month { width: 89px; margin-right: 11px; }
+div#shipping div.choose-a-shipping-address li fieldset dt.new-billing-address { display: inline; }
+div#shipping div.choose-a-shipping-address li fieldset dt.new-billing-address input.radio { margin-left: 21px; }
+
+/* page-login */
+div#login { padding: 0 13px; position: relative; }
+div#login h1 { color: #a6ba1b; font-size: 2.5em; line-height: 1.1em; font-weight: normal; padding: 14px 0 36px 18px; } 
+div#login h2 { color: #f48027; font-size: 1.5em; line-height: 1.1em; font-weight: normal; padding: 0 0 0 18px; letter-spacing: 0.015em; } 
+div#login label { cursor: pointer; }
+div#login input, div#login select { font-size: 1em; }
+
+/* login-box */
+div#login div.login-box { float: left; width: 310px; margin-right: 12px; position: relative; overflow: hidden; padding-top: 7px; }
+div#login div.no-account { margin: 0; }
+div#login div.login-box h2 { background: url(../images/bg_login_box1_title-left.gif) no-repeat top left; color: #fff; font-size: 1.3em; padding: 7px 0; display: inline; } 
+div#login div.new-customer h2 { background: url(../images/bg_login_box2_title-left.gif) no-repeat top left; }
+div#login div.no-account h2 { background: url(../images/bg_login_box3_title-left.gif) no-repeat top left; }  
+div#login div.login-box h2 span { background: url(../images/bg_login_box1_title-right-o.gif) no-repeat top right; padding: 7px 40px 6px 17px; }  
+div#login div.login-box h2 span.open { background: url(../images/bg_login_box1_title-right-c.gif) no-repeat top right; }
+div#login div.new-customer h2 span { background: url(../images/bg_login_box2_title-right-o.gif) no-repeat top right; }
+div#login div.no-account h2 span { background: url(../images/bg_login_box3_title-right-o.gif) no-repeat top right; }  
+div#login div.new-customer h2 span.open { background: url(../images/bg_login_box2_title-right-c.gif) no-repeat top right; }
+div#login div.no-account h2 span.open { background: url(../images/bg_login_box3_title-right-c.gif) no-repeat top right; }  
+div#login div.login-box fieldset { color: #fff; background: url(../images/bg_login_box1_top.gif) no-repeat top left; margin: 8px 0 0 0; padding-top: 3px; } 
+div#login div.new-customer fieldset { color: #fff; background: url(../images/bg_login_box2_top.gif) no-repeat top left; }
+div#login div.no-account fieldset { color: #fff; background: url(../images/bg_login_box3_top.gif) no-repeat top left; } 
+div#login div.login-box div.bg { background: url(../images/bg_login_box1_btm.gif) no-repeat bottom left; padding-bottom: 20px; } 
+div#login div.new-customer div.bg { background: url(../images/bg_login_box2_btm.gif) no-repeat bottom left; }
+div#login div.no-account div.bg { background: url(../images/bg_login_box3_btm.gif) no-repeat bottom left; } 
+div#login div.login-box h2 a { color: #fff; text-decoration: none; }
+div#login div.or { position: absolute; right: 10px; top: 0; color: #b0b6bb; font-size: 1.3em; line-height: 1em; }
+div#login div.login-box fieldset div { margin: 17px 15px 0; }
+div#login div.login-box fieldset div label, div#login div.login-box fieldset div.already-registered label { font-weight: bold; color: #e5f288; float: left; margin: 0 0 0 5px; width: auto; }
+div#login div.login-box fieldset.enter-info div strong.label { line-height: 1.4em; font-weight: bold; color: #e5f288; float: left; width: auto; }
+div#login div.login-box fieldset div.already-registered { padding: 9px 0 17px; }
+div#login div.login-box fieldset div label span, div#login div.login-box fieldset.enter-info div strong.label span { color: #fff; font-weight: normal; }
+div#login div.login-box fieldset div input { margin: 1px 0 0 0; float: left; } 
+div#login fieldset.continue-to-checkout { text-align: right; padding: 15px 0 0; }
+div#login fieldset p.req { color: #c2d920; background: url(../images/bg_forms_middle_dashes.gif) repeat-x top left; margin: 22px 17px 0; padding: 10px 0 0 0; }
+div#login div.login-box fieldset p.forgot-password { padding: 7px 0 0 66px; clear: left; }
+div#login div.login-box fieldset p.forgot-password a { color: #c2d920; font-size: 0.9em; }
+div#login div.login-box fieldset.enter-info label { font-weight: normal; color: #fff; width: 66px; margin: 4px 0 0 0; }
+div#login div.login-box fieldset.enter-info input.text { width: 205px; margin: 0; }
+div#login div.login-box fieldset.enter-info div { margin: 8px 17px 0; }
+div#login div.login-box fieldset.enter-info span.req { color: #c2d920; }  
+
+/* login-or-register */
+div#login-or-register h1 { padding-top: 0 !important; }
+div#login-or-register p.login-nav { text-transform: uppercase; color: #807e8b; padding: 14px 0 0 17px; }
+div#login-or-register p.login-nav a { color: #807e8b; text-decoration: none; padding: 0 3px; } 
+div#login div#login-or-register div.login-box { width: 448px; margin-right: 16px; }
+div#login div#login-or-register div.login-box fieldset { color: #fff; background: url(../images/bg_login_box1w_top.gif) no-repeat top left; margin: 8px 0 0 0; } 
+div#login div#login-or-register div.login-box input.text { width: 240px; }
+div#login div#login-or-register div.login-box label.none { width: auto; }
+div#login div#login-or-register div.login-box select { width: 242px; }
+div#login div#login-or-register div.login-box div.bg { background: url(../images/bg_login_box1w_btm.gif) no-repeat bottom left; }  
+div#login div#login-or-register div.new-customer { width: 486px; margin-right: 0; }
+div#login div#login-or-register div.new-customer fieldset { color: #fff; background: url(../images/bg_login_box2w_top.gif) no-repeat top left; } 
+div#login div#login-or-register div.new-customer div.bg { background: url(../images/bg_login_box2w_btm.gif) no-repeat bottom left; } 
+div#login div#login-or-register { margin: 0 0 35px; }
+div#login div#login-or-register div.btn-login { border-top: 2px solid #c5cb8b; margin-top: 20px; padding-top: 15px; }
+div#login div#login-or-register div.btn-login input { float: right; }
+div#login div#login-or-register p.benefits { color: #80808a; padding: 21px; }
+div#login div#login-or-register p.note { color: #e3f589; margin-left: 138px; font-size: 0.9em; clear: left; padding: 5px 0 0 0; }
+div#login div#login-or-register div.new-customer label { width: 133px; }
+div#login div#login-or-register div.new-customer fieldset div { margin: 0 21px 0; padding-bottom: 10px; }
+div#login div#login-or-register div.new-customer fieldset div.already-registered { margin-top: 7px; margin-bottom: 5px; }
+div#login div.new-customer input { border-color: #518796; }
+div#login div#login-or-register div.new-customer input.checkbox { margin-top: 2px; }
+div#login div#login-or-register div.new-customer label.none { color: #e3f589; width: 250px; float: left; padding: 0; margin: 0 0 0 7px; font-size: 0.9em; }
+div#login div#login-or-register div.new-customer div.sign-up strong.label,
+div#login div#login-or-register div.new-customer div.fave_product_features strong.label { font-weight: normal; color: #fff; width: 133px; }
+div#login div#login-or-register div.new-customer div.fave_product_features { padding-top: 9px; padding-bottom: 9px; }
+div#login div#login-or-register div.new-customer div.sign-up { padding-bottom: 18px; }
+div#login div#login-or-register div.new-customer fieldset div.fave_product_features span { display: block; padding: 0 0 5px; height: 14px; }
+div#login div#login-or-register div.continue { border-top: 1px solid #dae9ec; padding: 15px 0 0 0; }
+div#login div#login-or-register div.continue p { color: #e3f589; float: left; padding: 15px 0 0 0; }
+div#login div#login-or-register div.continue p.btn { float: right; padding: 4px 0 0 0; }
+div#login div#login-or-register div.login-box div.last { background: url(../images/bg_forms_middle_dashes-b.gif) repeat-x bottom left; padding-bottom: 26px; margin-bottom: 25px; }
+
+/* shopping-cart */
+body.page-login div#shopping-cart { padding-top: 15px; }
+body.page-login div#shopping-cart h2 { padding-bottom: 15px; }
+div#shopping-cart td.subtotal-shipping-tax { color: #899916; border-top: 1px solid #a6b250; background: none; } 
+div#shopping-cart td.subtotal-shipping-tax div { float: right; line-height: 1.2em; font-size: 1.1em; padding: 2px 0 0 0; width: 135px; }
+div#shopping-cart td.subtotal-shipping-tax dt, div#shopping-cart td.subtotal-shipping-tax dd { float: left; } 
+div#shopping-cart td.subtotal-shipping-tax dd { text-align: right; float: right; }

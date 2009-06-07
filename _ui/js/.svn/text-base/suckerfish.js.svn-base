@@ -1,0 +1,22 @@
+// Navigation hover function for IE6
+
+sfHover = function() {
+	var sfEls = document.getElementById("primary-nav").getElementsByTagName("li");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			sel = document.getElementsByTagName("select");
+				for (var i=0; i<sel.length; i++) {
+			sel[i].style.visibility = 'hidden';
+			}
+	this.className+=" sfhover";
+	}
+	sfEls[i].onmouseout=function() {
+		sel = document.getElementsByTagName("select");
+			for (var i=0; i<sel.length; i++) {
+		sel[i].style.visibility = 'visible';
+	}
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
